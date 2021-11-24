@@ -8,7 +8,6 @@ class ClapTrap
 {
 
 	public:
-
 		ClapTrap();
 		ClapTrap(std::string name);
 		ClapTrap( ClapTrap const & src );
@@ -22,13 +21,11 @@ class ClapTrap
 		void beRepaired(unsigned int amount);
 		ClapTrap &		operator=( ClapTrap const & rhs );
 
-	private:
+	protected:
 		std::string _name;
 		unsigned int			_hitPoints;
 		unsigned int			_energyPoints;
 		unsigned int			_attackDamage;
-
-
 };
 
 std::ostream &			operator<<( std::ostream & o, ClapTrap const & i );
