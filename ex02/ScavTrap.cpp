@@ -61,6 +61,12 @@ std::ostream &			operator<<( std::ostream & o, ScavTrap const & i )
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
+
+void ScavTrap::attack(std::string const & target)
+{
+	std::cout << "ScavTrap " << this->_name << " attacked " << target << ", causing " << this->_attackDamage << " points of damage!" << std::endl;
+}
+
 void ScavTrap::guardGate(void)
 {
 	std::cout << "ScavTrap has entered in Gate keeper mode." << std::endl;

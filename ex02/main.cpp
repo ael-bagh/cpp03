@@ -14,14 +14,15 @@ int main()
     std::cout << "mirage (frag) stats:\n" << mirage << std::endl;
     std::cout << "__________________super class methods_____________________" << std::endl;
     lifeline.takeDamage(20);
-    lifeline.attack("pathfinder");
     lifeline.beRepaired(10);
     seer.takeDamage(20);
-    seer.attack("lifeline");
     seer.beRepaired(10);
     mirage.takeDamage(20);
-    mirage.attack("mirage");
     mirage.beRepaired(10);
+    std::cout << "__________________Attack functions_____________________" << std::endl;
+    lifeline.attack("pathfinder");
+    seer.attack("lifeline");
+    mirage.attack("mirage");
     std::cout << "__________________specific functions_____________________" << std::endl;
     mirage.highFivesGuys();
     seer.guardGate();
