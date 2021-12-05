@@ -9,7 +9,6 @@ class ClapTrap
 
 	public:
 
-		ClapTrap();
 		ClapTrap(std::string name);
 		ClapTrap( ClapTrap const & src );
 		~ClapTrap();
@@ -23,6 +22,7 @@ class ClapTrap
 		ClapTrap &		operator=( ClapTrap const & rhs );
 
 	private:
+		ClapTrap();
 		std::string _name;
 		unsigned int			_hitPoints;
 		unsigned int			_energyPoints;
